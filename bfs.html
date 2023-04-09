@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFS</title>
+    <link rel="stylesheet" href="./gen.css">
+</head>
+<body>
+    <header>
+        <div><a href="./index.html" id="navigation"><img src="data:image/png;base64,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" alt="back"> <span>Go Back</span></a></div>
+        <div><div class="color h-unvisited"></div>- Unvisited</div>
+        <div><div class="color h-visiting"></div>- Visiting</div>
+        <div><div class="color h-inqueue"></div>- In Queue</div>
+        <div><div class="color h-visited"></div>- Visited</div>
+    </header>
+    <main>
+        <div class="box"></div>
+    </main>
+    <footer>
+        <div id="options">
+            <div><label for="rows">Rows</label><input id="rows" name="rows" type="number" placeholder="Enter rows"></div>
+            <div><label for="columns">Columns</label><input name="columns" id="columns" type="number" placeholder="Enter columns"></div>
+            <div><label ></label><button id="generateGridButton">Generate</button></div>
+        </div>
+    </footer>
+</body>
+<script src="./bfs.js"></script>
+</html>
